@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body
+{
+    background:rgba(193, 219, 216, 0.747);
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	 font-family: "Poppins",sans-serif;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 min-height: 100vh;
+}
+.container
+{
+    width: 950px;
+	background:rgba(193, 219, 216, 0.747);    min-height: 400px;
+    box-shadow: 0 0 50px 0 black;
+    padding: 80px 90px;
+    border-radius: 30px;
+    display: flex;
+}
+.left,.right
+{
+	width: 50%;
+}
+.left img
+{
+	height: 300px;
+	width: 300px;
+}
+
+.right h1
+{
+	
+	color: black;
+	font-weight: 700;
+	padding: 5px;
+}
+.right h3
+{
+	padding-left: 10px;
+}
+.right ul li 
+{
+	margin: 5px;
+}
+.right button
+{
+   width: 300px;
+   height: 50px;
+   border-radius: 20px;
+   background: black;
+   transition: .5s;
+}
+.right button 
+{
+	padding: 15px;
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+	letter-spacing: 1.5px;
+	font-weight: 600;
+}
+
+.right button:hover
+{
+
+	transition: .5s;
+	transform: scale(1.05);
+	}
+	.right img
+	{
+		position: absolute;
+		transform: translateY(-63px);
+		right: 230px;
+		width: 50px;
+		height: 20px;
+
+	}
+	#namepage
+	{
+     display: flex;
+      justify-content: center;
+      align-items: center;
+      
+
+	}
+	.content 
+	{
+      width: 100%;
+      height: 300px;
+      display: grid;
+      grid-row-gap: 40px;
+     
+
+	 }
+.content h1
+{
+	color: darkslategray;
+
+}
+	 .content button 
+	 {
+ width: 150px;
+ height: 40px;
+ background: blue;
+ border-radius: 30px;
+ color: white;
+ border: none;
+ font-size: 15px;
+ transition: .3s;
+
+	 }
+ .content button a
+ {
+ 	color: white;
+ 	text-decoration: none;
+ }
+	 .content button:hover
+	 {
+      transform: scale(1.05);
+      transition: .5s;
+	 }
+
+	 .content input[placeholder]
+	 {
+	 	width: 200px;
+	 	height: 50px;
+	 	border-radius: 20px;
+	 	color: black;
+	 	font-size: 16px;
+	 	padding-left: 30px;
+	 	border: none;
+	 }
+	 #playerName
+
+{
+	text-align: center;
+  font-size: 39px;	
+}
+#pname
+{
+	text-align: center;
+
+	color: red;
+}
+#btn
+{
+	margin-left: 400px;
+	text-align: center;
+}

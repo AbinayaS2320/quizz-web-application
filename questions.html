@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+    <link rel="stylesheet" href="styles/questions.css">
+</head>
+
+<body>
+    <div class="container" id="questionScreen">
+
+        <div class="top">
+
+            <h1>Live Quizz</h1>
+            <h3 class="score">Score : <span>0</span></h3>
+            <h3 class="timeleft" id="rtime">Time Left : <span></span></h3>
+        </div>
+        <div class="question1">
+
+
+        </div>
+        <div class="option1">
+            <span onclick="checkAnswer(this)" data-opt="1"></span>
+            <span onclick="checkAnswer(this)" data-opt="2"></span>
+            <span onclick="checkAnswer(this)" data-opt="3"></span>
+            <span onclick="checkAnswer(this)" data-opt="4"></span>
+        </div>
+        <div class="bottom">
+            <button onclick="showNext()">
+				Next
+			</button>
+            <button onClick="showResult(1)">
+				Result
+			</button>
+        </div>
+    </div>
+
+    <div class="container" id="resultScreen" style="display: none;">
+        <div class="top">
+
+            <h1>Live Quizz Result</h1>
+
+        </div>
+
+        <div class="resultBox">
+            <label for="">Questions : </label>
+            <span id="totalQuestions">6</span>
+            <label for="">Attempt : </label>
+            <span id="attemptQuestions">0</span>
+            <label for="">Correct : </label>
+            <span id="correctAnswers">0</span>
+            <label for="">Wrong : </label>
+            <span id="wrongAnswers">0</span>
+            <span id="Excellent" style="display: none;">Wow You Scored more than 5 . Geniusssss !</span>
+            <span id="good" style="display: none;"> You Scored more than 3 . bit Smart !</span>
+            <span id="better" style="display: none;"> You Scored more than 1 . You need more Practice!</span>
+            <span id="waste" style="display: none;">Wasted ! Please Spend time for Improving your Gk.</span>
+        </div>
+        <div class="footer">
+
+
+            <img src="media/girlcelebrate.gif" alt="" class="win" style="display: none;">
+            <img src="media/better.gif" alt="" class="medium" style="display: none;">
+            <img src="media/wasted.gif" alt="" class="lose" style="display: none;">
+            <button><a href="index.html">Restart</a></button>
+        </div>
+    </div>
+
+    <script src="scripts/quizz.js"></script>
+    <script src="scripts/jquery-3.6.1.min.js"></script>
+    <script src="scripts/script.js"></script>
+
+</body>
+
+</html>

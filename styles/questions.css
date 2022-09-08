@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:rgba(193, 219, 216, 0.747);
+}
+
+.container {
+    width: 950px;
+    background: rgba(158, 190, 186, 0.747);
+    min-height: 400px;
+    box-shadow: 0 0 50px 0 black;
+    padding: 80px 90px;
+    border-radius: 30px;
+    display: flex;
+}
+
+.top {
+    position: absolute;
+    transform: translateY(-40px);
+    height: 100px;
+    width: 70%;
+    display: flex;
+    border-bottom: 2px solid black;
+}
+
+.top h1 {
+    font-weight: 600;
+    color: black;
+}
+
+.top h3 {
+    color: darkslategray;
+    position: relative;
+    top: 10px;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    height: 20px;
+    width: 100px;
+    border: 2px solid gray;
+    margin-left: 200px;
+    border-radius: 30px;
+}
+
+.question1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100px;
+    position: absolute;
+    top: 35%;
+    background: rgba(128, 184, 170, 0.767);
+    color: black;
+    border-radius: 15px;
+    font-size: 22px;
+}
+
+.option1 {
+    position: absolute;
+    top: 55%;
+    width: 70%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 0;
+}
+
+.option1 span {
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    letter-spacing: 1.1px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    background-color: rgba(172, 117, 164, 0.356);
+    padding-top: 20px;
+    margin-left: 25px;
+    width: 400px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.option1 span.right {
+    background-color: rgb(62, 196, 62);
+    border-color: rgb(62, 196, 62);
+    color: white;
+}
+
+.option1 span.wrong {
+    background-color: rgb(228, 23, 23);
+    border-color: rgb(228, 23, 23);
+    color: white;
+}
+
+.bottom {
+    position: absolute;
+    top: 83%;
+    left: 19%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 550px;
+}
+
+.bottom button {
+    width: 150px;
+    height: 50px;
+    background: transparent;
+    color: darkslategray;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    border-radius: 20px;
+    border: 2px solid darkslategray;
+}
+
+.bottom button:hover {
+    transition: .3s;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+.resultBox {
+    position: absolute;
+    top: 40%;
+    width: 70%;
+    height: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    grid-row-gap: 15px;
+    font-size: 20px;
+}
+
+.resultBox *:nth-child(odd) {
+    text-align: right;
+}
+
+.resultBox span {
+    font-weight: 600;
+}
+
+.footer {
+    position: absolute;
+    top: 40%;
+    right: 10%;
+}
+
+.footer img {
+    height: 200px;
+    width: 300px;
+}
+
+.footer button {
+    position: relative;
+    top: 100px;
+    width: 100px;
+    height: 50px;
+    background: blue;
+    color: white;
+    font-size: 14px;
+    border: 2px solid blue;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.footer button a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer button:hover {
+    cursor: pointer;
+    transition: .3s;
+    transform: scale(1.05);
+}
+
+#Excellent,
+#good,
+#better,
+#waste {
+    color: red;
+}
